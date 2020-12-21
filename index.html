@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Space Station Location</title>
+    <meta
+      name="description"
+      content="Real-time location of the International Space Station"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container stack">
+      <h1 class="center-txt">
+        Real-time Location of the International Space Station
+      </h1>
+      <p>
+        Latitude: <span id="lat"></span>&#176;<br />
+        Longitutude: <span id="long"></span>&#176;
+      </p>
+      <div id="map"></div>
+      <button class="btn" type="button" id="reset">Reset Map View</button>
+      <p>
+        This page uses the "Where the ISS at?" REST API to fetch the real-time
+        location data, and then plot a custom icon onto a map using the Leaflet
+        javascript library. I've set it to update the location every 2.5
+        seconds.
+      </p>
+    </div>
+    <script src="iss.js"></script>
+  </body>
+</html>
