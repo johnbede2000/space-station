@@ -11,7 +11,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.control.scale().addTo(map);
 // use custom marker icon
 const myIcon = L.icon({
-  iconUrl: 'iss.png',
+  iconUrl:
+    'https://res.cloudinary.com/dd23iaiap/image/upload/v1608548702/iss_ybqmo4.png',
   iconSize: [200, 200],
   iconAnchor: [100, 100],
 });
