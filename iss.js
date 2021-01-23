@@ -24,7 +24,7 @@ const marker = L.marker([0, 0], { icon: myIcon })
 
 let firstTime = true;
 async function fetchData() {
-  let data = await await fetch(
+  let data = await fetch(
     'https://api.wheretheiss.at/v1/satellites/25544'
   );
   let dataJSON = await data.json();
